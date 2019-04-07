@@ -1,0 +1,44 @@
+# Plik parametryczny gry.
+# Komentarz zaczyna sie od znaku # i obowiazuje do konca linii.
+# Parametry sa zapisane w postaci par {nazwa}={wartosc}.
+# Plik nalezy wczytac do obiektu java.util.Properties metoda load() tej klasy
+# wg wzoru w programie generatora plikow parametrycznych.
+#
+nazwaGry=Gra na PROZE, Strzelanka [pin: 7291, autorzy: Maciej Dabkowski Aneta Karpeta]
+# Nazwa gry powinna wyswietlac sie gdzies na planszy albo w tytule okna.
+#
+# 1. Poziomy gry i pliki opisujace poziom gry. Zawartosc pliku opisujacego poziom
+#    trzeba opracowac i przygotowac samodzielnie wg metody stosowanej w tym pliku.
+#
+liczbaPoziomow=4
+# dodatnia liczba ca³kowita
+nazwaBazowaPlikuZOpisemPoziomu=Level
+numeracjaPoziomowZaczynaSieOd=1
+# liczba 0 lub 1
+rozszerzeniePlikuZOpisemPoziomu=properties
+#
+# 2. Stopnie trudnosci
+#
+liczbaStopniTrudnosci=5
+# dodatnia liczba ca³kowita
+zmianaStopniaTrudnosci=39
+# liczba ca³kowita w zakresie 20..45 - o tyle procent zwiekszaja sie i/lub zmniejszaja
+# sie parametry wp³ywajace na stopien trudnosci np. predkosc, czas, liczba punktow do zdobycia itp.
+#
+# 3. Rozne wymiary
+#
+poczatkowaSzerokoscPlanszy=404
+poczatkowaWysokoscPlanszy=431
+poczatkowaSzerokoscObiektuGryJakoProcentPoczatkowejSzerokosciPlanszy=5.429414
+#
+# 4. Rysowanie tla i obiektow, do ktorych sie strzela
+#
+tlo=plikGraficzny
+plikTla=plik.jpeg
+# w ogolnosci tu mozna wstawic (wzgledna!) sciezke do w³asnego pliku Tla
+obiektyGry=plikGraficzny
+plikObiektu=plikObiektu.jpeg
+# w ogolnosci tu mozna wstawic (wzgledna!) sciezke do w³asnego pliku z obiektem graficznym
+#
+# Jesli uwazasz, ze warto dodac jeszcze jakies parametry dodaj je w dodatkowym
+# pliku konfiguracyjnym, obs³ugiwanym niezaleznie od tego pliku parametrycznego.
